@@ -26,5 +26,13 @@ pipeline {
                 }
             }
         }
+        stage('release') {
+            steps {
+                script {
+                    // Deploy your Docker image
+                    echo 'release application...'
+                }
+            }
+        }
     }
 }
